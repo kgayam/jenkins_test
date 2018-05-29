@@ -28,11 +28,6 @@ pipeline {
             sleep(time: 10, unit: 'SECONDS')
           }
         }
-        stage('Checkpoint_java9') {
-          steps {
-            checkpoint 'Checkpoint'
-          }
-        }
         stage('Java 9') {
           agent {
             label 'jdk9'
