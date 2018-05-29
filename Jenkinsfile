@@ -19,7 +19,7 @@ pipeline {
         message 'Should we continue?'
       }
       steps {
-        echo 'Continuing with deployment'
+        input(message: 'should i continue', id: '30')
       }
     }
   }
