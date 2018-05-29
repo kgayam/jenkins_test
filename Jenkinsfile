@@ -1,7 +1,7 @@
 pipeline {
   agent any
   stages {
-    stage('error') {
+    stage('Print JDK') {
       steps {
         sh 'java -version'
       }
