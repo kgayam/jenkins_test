@@ -6,5 +6,10 @@ pipeline {
         sh 'java -version'
       }
     }
+    stage('Print Ruby') {
+      steps {
+        sh 'ruby -version'
+      }
+    }
   }
 }
