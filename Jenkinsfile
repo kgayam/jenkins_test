@@ -11,6 +11,11 @@ pipeline {
         echo "${TEST_USER_PSW}"
       }
     }
+    stage('Checkpoint1') {
+      steps {
+        checkpoint 'Checkpoint'
+      }
+    }
     stage('Testing') {
       failFast true
       parallel {
